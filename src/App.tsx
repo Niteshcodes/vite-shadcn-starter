@@ -5,11 +5,10 @@ import PublicRoutes from "./routes/publicRoutes";
 export default function Router() {
   return (
     <Routes>
-      <Route path="/" element={<MainLayout />} >
-        <Route index element={<ProtectedRoutes />} />
+      <Route path="*" element={<MainLayout />} >
+        <Route path="/*" element={<ProtectedRoutes />} />
       </Route>
-      <Route path="/public" element={<PublicRoutes />} />
-      <Route path="*" element={<MainLayout />} />
+      <Route path="/public/*" element={<PublicRoutes />} />
     </Routes>
   )
 }
