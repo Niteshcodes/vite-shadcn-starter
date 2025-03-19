@@ -38,7 +38,7 @@ vite-shadcn-starter/
 
 ### 1️⃣ Clone the Repository  
 ```bash
-git clone [https://github.com/yourusername](https://github.com/Niteshcodes/vite-shadcn-starter.git
+git clone https://github.com/Niteshcodes/vite-shadcn-starter.git
 cd vite-shadcn-starter
 ```
 
