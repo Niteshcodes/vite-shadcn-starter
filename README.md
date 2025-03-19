@@ -1,88 +1,124 @@
-Here's a well-structured **README.md** for your **Vite + React + ShadCN Starter** repository:  
+# Vite + ShadCN Starter
+
+A modern and customizable starter template for React applications using **Vite**, **ShadCN**, **Tailwind CSS**, and other essential libraries. This setup is optimized for fast development and scalable UI components.
+
+## 🚀 Features
+
+- ⚡ **Vite** - Superfast development environment
+- 🎨 **ShadCN** - Prebuilt and customizable UI components
+- 🎭 **Tailwind CSS** - Utility-first CSS framework
+- 📜 **React Router** - Declarative routing
+- 📩 **React Hook Form** - Powerful form management
+- 🔥 **Sonner (Toast)** - Beautiful toast notifications
+- ✅ **ESLint & Prettier** - Code linting and formatting
 
 ---
 
-# 📦 Vite + ShadCN Starter  
-
-🚀 A modern **React + Vite + ShadCN** starter template with **Tailwind CSS**, **Radix UI**, and an optimized development setup. This template provides a fast, sleek, and accessible foundation for building beautiful UI components effortlessly.  
-
-## ✨ Features  
-
-- ⚡ **Vite** – Super fast development experience  
-- 🎨 **ShadCN** – Beautiful and accessible UI components  
-- 💨 **Tailwind CSS** – Utility-first styling for rapid UI development  
-- 🏗️ **Radix UI** – Headless UI primitives for flexibility  
-- ✅ **ESLint & Prettier** – Code quality and formatting enforcement  
-- 🔥 **Husky & Lint-Staged** – Pre-commit hooks for clean commits  
-- 🌍 **Dark Mode Support**  
-
-## 📂 Folder Structure  
+## 📂 Folder Structure
 
 ```
-vite-shadcn-starter/
-│── src/                 # Main application source code
-│   ├── components/      # Reusable UI components
-│   ├── pages/           # Page components
-│   ├── hooks/           # Custom React hooks
-│   ├── lib/             # Utility functions and configurations
-│   
-│── public/              # Static assets
-│── .eslintrc.cjs        # ESLint configuration
-│── tailwind.config.js   # TailwindCSS configuration
-│── vite.config.ts       # Vite configuration
-│── package.json         # Project dependencies
-│── README.md            # Project documentation
+📦 vite-shadcn-starter
+ ┣ 📂 public
+ ┣ 📂 src
+ ┃ ┣ 📂 assets
+ ┃ ┃ ┗ 📜 react.svg
+ ┃ ┣ 📂 components
+ ┃ ┃ ┣ 📂 shared
+ ┃ ┃ ┃ ┗ 📜 header.tsx
+ ┃ ┃ ┣ 📂 ui
+ ┃ ┃ ┃ ┣ 📜 button.tsx
+ ┃ ┃ ┃ ┣ 📜 card.tsx
+ ┃ ┃ ┃ ┣ 📜 form.tsx
+ ┃ ┃ ┃ ┣ 📜 input.tsx
+ ┃ ┃ ┃ ┣ 📜 label.tsx
+ ┃ ┃ ┃ ┗ 📜 sonner.tsx
+ ┃ ┣ 📂 lib
+ ┃ ┃ ┗ 📜 utils.ts
+ ┃ ┣ 📂 pages
+ ┃ ┃ ┣ 📂 login
+ ┃ ┃ ┣ 📂 main
+ ┃ ┣ 📂 routes
+ ┃ ┃ ┣ 📂 layout
+ ┃ ┃ ┃ ┗ 📜 index.tsx
+ ┃ ┃ ┣ 📜 protectedRoutes.tsx
+ ┃ ┃ ┣ 📜 publicRoutes.tsx
+ ┃ ┣ 📜 App.tsx
+ ┃ ┣ 📜 main.tsx
+ ┃ ┣ 📜 index.css
+ ┃ ┣ 📜 vite-env.d.ts
+ ┣ 📜 .gitignore
+ ┣ 📜 components.json
+ ┣ 📜 eslint.config.js
+ ┣ 📜 index.html
+ ┣ 📜 LICENSE
+ ┣ 📜 package.json
+ ┣ 📜 package-lock.json
+ ┣ 📜 README.md
+ ┣ 📜 tsconfig.app.json
+ ┣ 📜 tsconfig.json
+ ┣ 📜 tsconfig.node.json
+ ┗ 📜 vite.config.ts
 ```
 
-## 🚀 Getting Started  
+---
 
-### 1️⃣ Clone the Repository  
-```bash
+## 🛠 Installation
+
+Clone the repository and install dependencies:
+
+```sh
 git clone https://github.com/Niteshcodes/vite-shadcn-starter.git
 cd vite-shadcn-starter
+pnpm install  # or npm install / yarn install
 ```
-
-### 2️⃣ Install Dependencies  
-```bash
-npm install
-# OR
-pnpm install
-# OR
-yarn install
-```
-
-### 3️⃣ Run the Development Server  
-```bash
-npm run dev
-```
-> Your app should now be running at **http://localhost:5173/**  
-
-## 🔧 Scripts  
-
-| Command               | Description                      |
-|-----------------------|----------------------------------|
-| `npm run dev`        | Start the development server     |
-| `npm run build`      | Build the project for production |
-| `npm run preview`    | Preview the production build     |
-| `npm run lint`       | Run ESLint checks                |
-| `npm run format`     | Format code using Prettier      |
-
-## 🎨 Theming  
-
-You can easily customize the **ShadCN components** and **Tailwind theme** in the following files:  
-
-- `tailwind.config.js` – Modify Tailwind settings and themes  
-- `src/styles/globals.css` – Add global styles  
-- `src/components/ui/` – Modify UI components  
-
-## 📜 License  
-
-This project is licensed under the **MIT License** – feel free to modify and use it in your projects!  
 
 ---
 
-### 🌟 If you find this template useful, consider giving it a ⭐ on GitHub! 🚀  
+## 💻 Usage
+
+Run the development server:
+
+```sh
+pnpm dev  # or npm run dev / yarn dev
+```
+
+Build for production:
+
+```sh
+pnpm build  # or npm run build / yarn build
+```
+
+Preview production build:
+
+```sh
+pnpm preview  # or npm run preview / yarn preview
+```
 
 ---
 
-Let me know if you need any modifications! 😊
+## 🧩 Technologies Used
+
+- [Vite](https://vitejs.dev/)
+- [React](https://react.dev/)
+- [ShadCN](https://ui.shadcn.com/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [React Router](https://reactrouter.com/)
+- [React Hook Form](https://react-hook-form.com/)
+- [Sonner (Toast)](https://sonner.dev/)
+- [Zod](https://zod.dev/) (for form validation)
+- [ESLint](https://eslint.org/) & [Prettier](https://prettier.io/)
+
+---
+
+## 📜 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+---
+
+## ⭐ Like this project?
+
+Give a ⭐ on [GitHub](https://github.com/Niteshcodes/vite-shadcn-starter) to support this project!
+
+---
+
